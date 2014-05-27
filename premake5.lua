@@ -14,6 +14,8 @@ project "libogg"
 		linkoptions { "/DEF:\"../../Source/Thirdparty/libogg/win32/ogg.def\"" }
 	configuration {}
 	
+	warnings "Off" --Disable warnings, third party libs flood the log
+	
 	targetdir( LDIR_THIRDPARTY_LIB )
 	location( LDIR_THIRDPARTY_BUILD )
 
